@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Новости тренажёрного зала Железный мир. Акции, события и соревнования.">
+    <title>Новости | Железный мир</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <svg class="loading-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/>
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+            </svg>
+            <h1 class="loading-title">ЖЕЛЕЗНЫЙ МИР</h1>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                </svg>
+                <span>ЖЕЛЕЗНЫЙ МИР</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="news.html" class="active">Новости</a></li>
+                <li><a href="workouts.html">Тренировки</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="sitemap.html">Карта сайта</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="news.html" class="active">Новости</a></li>
+            <li><a href="workouts.html">Тренировки</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="sitemap.html">Карта сайта</a></li>
+        </ul>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
+                    <path d="M18 14h-8"/>
+                    <path d="M15 18h-5"/>
+                    <path d="M10 6h8v4h-8V6Z"/>
+                </svg>
+                <span>Новости и события</span>
+            </div>
+            <h1 class="page-title">ПОСЛЕДНИЕ <span class="text-red">НОВОСТИ</span></h1>
+            <p class="page-subtitle">Будьте в курсе всех событий, акций и новинок нашего зала</p>
+        </div>
+    </section>
+
+    <section class="news-page section">
+        <div class="container">
+            <div class="news-grid">
+                <article class="news-card scroll-animate" data-modal="news1">
+                    <div class="news-image">
+                        <span class="news-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                            События
+                        </span>
+                        <img src="images/news-3.jpg" alt="Открытие нового зала">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            15 декабря 2024
+                        </div>
+                        <h3 class="news-title">Открытие нового зала</h3>
+                        <p class="news-excerpt">Мы рады сообщить об открытии нового просторного зала с современным оборудованием!</p>
+                        <button class="link-arrow news-btn">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                    </div>
+                </article>
+
+                <article class="news-card scroll-animate" data-modal="news2">
+                    <div class="news-image">
+                        <span class="news-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+                            Соревнования
+                        </span>
+                        <img src="images/news-1.jpg" alt="Соревнования">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            10 декабря 2024
+                        </div>
+                        <h3 class="news-title">Соревнования по пауэрлифтингу</h3>
+                        <p class="news-excerpt">Приглашаем принять участие в ежегодных соревнованиях с призовым фондом 100 000 рублей!</p>
+                        <button class="link-arrow news-btn">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                    </div>
+                </article>
+
+                <article class="news-card scroll-animate" data-modal="news3">
+                    <div class="news-image">
+                        <span class="news-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5H11"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5H13"/></svg>
+                            Акции
+                        </span>
+                        <img src="images/news-2.jpg" alt="Первомайская акция">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            15 апреля 2026
+                        </div>
+                        <h3 class="news-title">Первомайская акция</h3>
+                        <p class="news-excerpt">Скидка 30% на все абонементы до конца мая! Успейте записаться!</p>
+                        <button class="link-arrow news-btn">Подробнее <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe section bg-dark">
+        <div class="container">
+            <div class="subscribe-box scroll-animate">
+                <h2>ПОДПИШИТЕСЬ НА <span class="text-red">НОВОСТИ</span></h2>
+                <p>Будьте первыми, кто узнает о новых акциях, событиях и специальных предложениях</p>
+                <form class="subscribe-form" onsubmit="event.preventDefault(); alert('Спасибо за подписку!');">
+                    <input type="email" placeholder="Ваш email" required>
+                    <button type="submit" class="btn btn-primary">Подписаться</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="news1">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-image"><img src="images/news-3.jpg" alt="Открытие нового зала"></div>
+            <div class="modal-body">
+                <div class="modal-badges">
+                    <span class="news-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> События</span>
+                    <span class="news-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 15 декабря 2024</span>
+                </div>
+                <h2>Открытие нового зала</h2>
+                <div class="modal-text">
+                    <p>Мы рады сообщить об открытии нового просторного зала площадью более 500 квадратных метров!</p>
+                    <p><strong>Новое пространство оснащено:</strong></p>
+                    <ul>
+                        <li>25+ силовых тренажёров последнего поколения</li>
+                        <li>Расширенной кардио-зоной</li>
+                        <li>Отдельным залом для групповых занятий</li>
+                        <li>Зоной функционального тренинга</li>
+                        <li>Комфортными раздевалками и душевыми</li>
+                    </ul>
+                    <p>В честь открытия все новые клиенты получают скидку 30% на первый абонемент!</p>
+                    <p>Приходите и оцените новый уровень комфорта и качества тренировок.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="news2">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-image"><img src="images/news-1.jpg" alt="Соревнования"></div>
+            <div class="modal-body">
+                <div class="modal-badges">
+                    <span class="news-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg> Соревнования</span>
+                    <span class="news-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 10 декабря 2024</span>
+                </div>
+                <h2>Соревнования по пауэрлифтингу</h2>
+                <div class="modal-text">
+                    <p>Ежегодные соревнования по пауэрлифтингу "Железный мир 2024"!</p>
+                    <p><strong>Дисциплины:</strong></p>
+                    <ul>
+                        <li>Жим лёжа</li>
+                        <li>Приседания со штангой</li>
+                        <li>Становая тяга</li>
+                    </ul>
+                    <p><strong>Призовой фонд:</strong></p>
+                    <ul>
+                        <li>🥇 1 место — 50 000 ₽</li>
+                        <li>🥈 2 место — 30 000 ₽</li>
+                        <li>🥉 3 место — 20 000 ₽</li>
+                    </ul>
+                    <p>Регистрация обязательна до 5 декабря. Весовые категории: до 74 кг, до 83 кг, до 93 кг, до 105 кг, свыше 105 кг.</p>
+                    <p>Не упустите шанс проверить свои силы и выиграть приз!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="news3">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-image"><img src="images/news-2.jpg" alt="Первомайская акция"></div>
+            <div class="modal-body">
+                <div class="modal-badges">
+                    <span class="news-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5H11"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5H13"/></svg> Акции</span>
+                    <span class="news-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> 1 декабря 2024</span>
+                </div>
+                <h2>Первомайская акция</h2>
+                <div class="modal-text">
+                    <p>🎄 ПЕРВОМАЙСКАЯ АКЦИЯ ОТ ЖЕЛЕЗНОГО МИРА! 🎄</p>
+                    <p>С 1 по 31 мая действует специальное предложение:</p>
+                    <ul>
+                        <li>💪 Скидка 30% на все абонементы</li>
+                        <li>💪 Бесплатная пробная тренировка</li>
+                        <li>💪 Персональная программа в подарок</li>
+                    </ul>
+                    <p><strong>Абонементы со скидкой:</strong></p>
+                    <ul>
+                        <li>1 месяц — 3 500 ₽ (вместо 5 000 ₽)</li>
+                        <li>3 месяца — 9 000 ₽ (вместо 13 000 ₽)</li>
+                        <li>6 месяцев — 15 000 ₽ (вместо 22 000 ₽)</li>
+                        <li>12 месяцев — 25 000 ₽ (вместо 36 000 ₽)</li>
+                    </ul>
+                    <p>Количество абонементов по акции ограничено! Запишитесь прямо сейчас и начните новый год с новыми достижениями!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+                        <span>ЖЕЛЕЗНЫЙ МИР</span>
+                    </a>
+                    <p class="footer-desc">Профессиональный тренажёрный зал в Смоленске. Тяжёлая атлетика, силовые тренировки и персональные программы.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="workouts.html">Тренировки</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>ул. Крупской, 65А<br>Смоленск, Россия</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+7 (4812) 12-34-56</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Железный мир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

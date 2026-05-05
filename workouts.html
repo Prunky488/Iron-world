@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Программы тренировок в зале Железный мир. Силовые, кардио и функциональные тренировки.">
+    <title>Тренировки | Железный мир</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <svg class="loading-logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/>
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+            </svg>
+            <h1 class="loading-title">ЖЕЛЕЗНЫЙ МИР</h1>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                </svg>
+                <span>ЖЕЛЕЗНЫЙ МИР</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="workouts.html" class="active">Тренировки</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="sitemap.html">Карта сайта</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="workouts.html" class="active">Тренировки</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="sitemap.html">Карта сайта</a></li>
+        </ul>
+    </div>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2"/>
+                </svg>
+                <span>Программы тренировок</span>
+            </div>
+            <h1 class="page-title">ВЫБЕРИ СВОЮ <span class="text-red">ПРОГРАММУ</span></h1>
+            <p class="page-subtitle">Профессиональные программы тренировок для достижения ваших целей</p>
+        </div>
+    </section>
+
+    <section class="workouts-page section">
+        <div class="container">
+            <div class="workouts-grid">
+                <article class="workout-card scroll-animate" data-modal="workout1">
+                    <div class="workout-image">
+                        <img src="images/workout-power.jpg" alt="Силовые тренировки">
+                        <div class="workout-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/>
+                                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="workout-content">
+                        <div class="workout-subtitle">Power Training</div>
+                        <h3 class="workout-title">Силовые тренировки</h3>
+                        <p class="workout-desc">Программа для набора мышечной массы и увеличения силовых показателей</p>
+                        <div class="workout-meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60-90 мин</span>
+                            <span class="workout-price">от 5 000 ₽/мес</span>
+                        </div>
+                        <button class="btn btn-outline btn-full news-btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="workout-card scroll-animate" data-modal="workout2">
+                    <div class="workout-image">
+                        <img src="images/workout-cardio.jpg" alt="Кардио-тренировки">
+                        <div class="workout-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="workout-content">
+                        <div class="workout-subtitle">Cardio Training</div>
+                        <h3 class="workout-title">Кардио-тренировки</h3>
+                        <p class="workout-desc">Эффективное сжигание жира и укрепление сердечно-сосудистой системы</p>
+                        <div class="workout-meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 45-60 мин</span>
+                            <span class="workout-price">от 4 000 ₽/мес</span>
+                        </div>
+                        <button class="btn btn-outline btn-full news-btn">Подробнее</button>
+                    </div>
+                </article>
+
+                <article class="workout-card scroll-animate" data-modal="workout3">
+                    <div class="workout-image">
+                        <img src="images/workout-functional.jpg" alt="Функциональный тренинг">
+                        <div class="workout-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="workout-content">
+                        <div class="workout-subtitle">Functional Training</div>
+                        <h3 class="workout-title">Функциональный тренинг</h3>
+                        <p class="workout-desc">Комплексная разработка всех групп мышц и развитие координации</p>
+                        <div class="workout-meta">
+                            <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 мин</span>
+                            <span class="workout-price">от 6 000 ₽/мес</span>
+                        </div>
+                        <button class="btn btn-outline btn-full news-btn">Подробнее</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta section bg-dark">
+        <div class="container">
+            <div class="cta-content scroll-animate">
+                <h2 class="cta-title">НЕ ЗНАЕТЕ, ЧТО <span class="text-red">ВЫБРАТЬ?</span></h2>
+                <p class="cta-text">Запишитесь на бесплатную консультацию с нашим тренером, который поможет подобрать оптимальную программу</p>
+                <a href="contacts.html" class="btn btn-primary btn-glow">Бесплатная консультация <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="workout1">
+        <div class="modal-content modal-large">
+            <button class="modal-close">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image"><img src="images/workout-power.jpg" alt="Силовые тренировки"></div>
+                <div class="modal-body">
+                    <div class="workout-subtitle">Power Training</div>
+                    <h2>Силовые тренировки</h2>
+                    <div class="modal-text">
+                        <p>Силовые тренировки — основа любой программы по набору мышечной массы и развитию силы.</p>
+                        <p><strong>Что входит в программу:</strong></p>
+                        <ul>
+                            <li>Индивидуальный план тренировок</li>
+                            <li>Контроль техники выполнения упражнений</li>
+                            <li>Прогрессия нагрузок</li>
+                            <li>Рекомендации по питанию</li>
+                            <li>Еженедельные корректировки программы</li>
+                        </ul>
+                        <p><strong>Результаты через 3 месяца:</strong></p>
+                        <ul>
+                            <li>Увеличение силы на 20-30%</li>
+                            <li>Набор 3-5 кг мышечной массы</li>
+                            <li>Улучшение рельефа тела</li>
+                        </ul>
+                    </div>
+                    <div class="modal-sidebar">
+                        <div class="sidebar-price">от 5 000 ₽/мес</div>
+                        <a href="contacts.html" class="btn btn-primary btn-full">Записаться</a>
+                        <div class="sidebar-info">
+                            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span>60-90 мин</span></div>
+                            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> <span>3-4 раза в неделю</span></div>
+                        </div>
+                        <div class="sidebar-features">
+                            <h4>Особенности:</h4>
+                            <ul>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Персональный тренер</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Индивидуальная программа</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Контроль питания</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="workout2">
+        <div class="modal-content modal-large">
+            <button class="modal-close">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image"><img src="images/workout-cardio.jpg" alt="Кардио-тренировки"></div>
+                <div class="modal-body">
+                    <div class="workout-subtitle">Cardio Training</div>
+                    <h2>Кардио-тренировки</h2>
+                    <div class="modal-text">
+                        <p>Кардио-тренировки — лучший способ сжечь лишние калории и улучшить выносливость.</p>
+                        <p><strong>Что входит в программу:</strong></p>
+                        <ul>
+                            <li>Индивидуальный план кардио-нагрузок</li>
+                            <li>Мониторинг пульса и калорий</li>
+                            <li>Разнообразие тренажёров</li>
+                            <li>Интервальные тренировки HIIT</li>
+                            <li>Рекомендации по питанию</li>
+                        </ul>
+                        <p><strong>Результаты через 3 месяца:</strong></p>
+                        <ul>
+                            <li>Снижение веса на 5-10 кг</li>
+                            <li>Улучшение выносливости</li>
+                            <li>Снижение пульса в покое</li>
+                        </ul>
+                    </div>
+                    <div class="modal-sidebar">
+                        <div class="sidebar-price">от 4 000 ₽/мес</div>
+                        <a href="contacts.html" class="btn btn-primary btn-full">Записаться</a>
+                        <div class="sidebar-info">
+                            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span>45-60 мин</span></div>
+                            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> <span>3-5 раз в неделю</span></div>
+                        </div>
+                        <div class="sidebar-features">
+                            <h4>Особенности:</h4>
+                            <ul>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Мониторинг пульса</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> HIIT тренировки</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Контроль питания</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="workout3">
+        <div class="modal-content modal-large">
+            <button class="modal-close">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image"><img src="images/workout-functional.jpg" alt="Функциональный тренинг"></div>
+                <div class="modal-body">
+                    <div class="workout-subtitle">Functional Training</div>
+                    <h2>Функциональный тренинг</h2>
+                    <div class="modal-text">
+                        <p>Функциональный тренинг — комплексный подход к развитию физических качеств.</p>
+                        <p><strong>Что входит в программу:</strong></p>
+                        <ul>
+                            <li>Упражнения со собственным весом</li>
+                            <li>Работа с гирями, мячами, канатами</li>
+                            <li>Упражнения на баланс и координацию</li>
+                            <li>Кроссфит элементы</li>
+                            <li>Групповые занятия</li>
+                        </ul>
+                        <p><strong>Результаты через 3 месяца:</strong></p>
+                        <ul>
+                            <li>Развитие всех физических качеств</li>
+                            <li>Улучшение координации</li>
+                            <li>Увеличение взрывной силы</li>
+                        </ul>
+                    </div>
+                    <div class="modal-sidebar">
+                        <div class="sidebar-price">от 6 000 ₽/мес</div>
+                        <a href="contacts.html" class="btn btn-primary btn-full">Записаться</a>
+                        <div class="sidebar-info">
+                            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> <span>60 мин</span></div>
+                            <div><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> <span>2-3 раза в неделю</span></div>
+                        </div>
+                        <div class="sidebar-features">
+                            <h4>Особенности:</h4>
+                            <ul>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Групповые занятия</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Разнообразие оборудования</li>
+                                <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Все уровни подготовки</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11M6.5 17.5h11M7 6.5v11M17 6.5v11M9.5 6.5v11M14.5 6.5v11"/><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+                        <span>ЖЕЛЕЗНЫЙ МИР</span>
+                    </a>
+                    <p class="footer-desc">Профессиональный тренажёрный зал в Смоленске. Тяжёлая атлетика, силовые тренировки и персональные программы.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="workouts.html">Тренировки</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span>ул. Крупской, 65А<br>Смоленск, Россия</span></li>
+                        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>+7 (4812) 12-34-56</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Железный мир. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
